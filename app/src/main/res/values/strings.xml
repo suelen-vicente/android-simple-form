@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">DesignProSubscriptionSuelen</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_name_hint">Enter your name</string>
+    <string name="type_of_subscription">Subscription Type</string>
+    <string name="subscription_type_monthly">Monthly</string>
+    <string name="subscription_type_yearly">Yearly</string>
+    <string name="additional_features">Additional Features</string>
+    <string name="additional_feature_updates">Updates</string>
+    <string name="additional_feature_unlimited_designs">Unlimited Designs</string>
+    <string name="type_of_design">Type of Design</string>
+    <string name="advanced_tools">Advanced Tools</string>
+    <string name="advanced_tool_none">None</string>
+    <string name="advanced_tool_monthly_custom_printing">Custom Printing Tools</string>
+    <string name="advanced_tool_monthly_pro">Pro Tools</string>
+    <string name="advanced_tool_yearly_material_designs">Material Designs</string>
+    <string name="advanced_tool_yearly_premium">Premium Tools</string>
+    <string name="province">Province</string>
+    <string name="auto_complete_province_hint">Enter Province</string>
+    <string name="date">Date</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="type_of_designs_array">
+        <item>Labels</item>
+        <item>Cards</item>
+        <item>Badges</item>
+    </string-array>
+
+    <string-array name="province_array">
+        <item>Ontario</item>
+        <item>Quebec</item>
+        <item>Nova Scotia</item>
+        <item>New Brunswick</item>
+        <item>Manitoba</item>
+        <item>British Columbia</item>
+        <item>Prince Edward Island</item>
+        <item>Saskatchewan</item>
+        <item>Alberta</item>
+        <item>Newfoundland and Labrador</item>
+    </string-array>
 </resources>

@@ -1,18 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/lnDesignPro"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="176dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/design_pro_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_name"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/customer_name_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_of_subscription"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rgSubscriptionType"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <RadioButton
+                android:id="@+id/rdSubscriptionTypeMonthly"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/subscription_type_monthly"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp"
+                />
+
+            <RadioButton
+                android:id="@+id/rdSubscriptionTypeYearly"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/subscription_type_yearly"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/additional_features"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/chkAdditionalFeatureUpdates"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            android:text="@string/additional_feature_updates"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/chkAdditionalFeatureUnlimitedDesigns"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            android:text="@string/additional_feature_unlimited_designs"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_of_design"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spnTypeOfDesign"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/dark_blue"
+            android:background="@drawable/edit_text_border"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced_tools"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rgAdvancedTools"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <RadioButton
+                android:id="@+id/rdAdvancedToolNone"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/advanced_tool_none"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp"
+                />
+
+            <RadioButton
+                android:id="@+id/rdAdvancedToolSecond"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/advanced_tool_monthly_custom_printing"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rdAdvancedToolThird"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/advanced_tool_monthly_pro"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/province"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/acProvince"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/auto_complete_province_hint"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/dark_blue"
+            android:background="@drawable/edit_text_border"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="date"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            android:textColor="@color/dark_blue"
+            android:background="@drawable/edit_text_border"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
